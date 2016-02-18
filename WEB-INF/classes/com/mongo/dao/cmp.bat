@@ -1,0 +1,1 @@
+javac -classpath c:\tomcat7\webapps\reports.com\WEB-INF\classes;c:\tomcat7\webapps\reports.com\WEB-INF\lib\gson-2.2.2.jar;c:\tomcat7\webapps\reports.com\WEB-INF\lib\gson-2.2.2.jar;C:\tomcat7\webapps\reports.com\WEB-INF\lib\mongo.jar;. *.java

@@ -1,0 +1,33 @@
+<div class="col-md-6 col-md-offset-3">
+    <div class="page-header text-center">
+        <h1><span class="glyphicon glyphicon-home"></span> Enter Login Details</h1>
+    </div>
+
+    <!--Show error messages-->
+    <div align='center'>
+        <h3><span class="label label-danger" ng-show="error">{{error}}</span>
+        </h3>
+        <br>
+    </div>
+
+    <!--Form-->
+    <form ng-submit="fc.processForm()" name="loginForm">
+        <div id="name-group" class="form-group">
+            <span class="glyphicon glyphicon-user">
+                    </span>
+            <label>Enter Username</label>
+            <input type='text' name='name' class='form-control' placeholder="Username" ng-model='fc.formData.username' required ng-change='error = null'>
+            <span class='help-block'></span>
+        </div>
+        <div id="password-group" class="form-group">
+            <span class="glyphicon glyphicon-lock"></span>
+            <label>Enter Password</label>
+            <input type="text" class="form-control" placeholder="Password" name="password" ng-model="fc.formData.password" required ng-change='error = null'>
+            <span class="help-block"></span>
+        </div>
+        <!-- SUBMIT BUTTON -->
+        <button type="submit" class="btn btn-success btn-lg btn-block">
+            <span class="glyphicon glyphicon-flash"></span> Submit!
+        </button>
+    </form>
+</div>
